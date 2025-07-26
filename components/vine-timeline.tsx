@@ -10,7 +10,7 @@ const weekData = [
     topic:
       "In this week, we explored the basics of ethics and what morality really means in our day-to-day lives.",
     reflection:
-      "I realized that ethics is more than just following rules. It's about making thoughtful decisions, especially when situations are tricky. The trolley problem helped me see how hard it can be to make the 'right' choice when both options have consequences.",
+      "Ethics is not just academic; it’s a lived experience rooted in every decision, action, and relationship. Understanding its foundations helps us navigate life with integrity, responsibility, and awareness of our impact on others.",
     application:
       "I started paying more attention to how I treat people in everyday situations — like being more respectful to service workers or speaking up when something feels unfair.",
   },
@@ -56,7 +56,7 @@ const weekData = [
   },
   {
     week: 11,
-    title: "Ethics in the Real World &ndash; Guest Speakers",
+    title: "Ethics in the Real World - Guest Speakers",
     topic:
       "We had guest speakers from different industries who shared how ethics plays out in real workplaces.",
     reflection:
