@@ -93,7 +93,7 @@ This portfolio is part of an academic assignment. **Any form of plagiarism, shar
 
 ## 🙏 Credits
 
-Special thanks to the course lecturer and fellow students who made this journey meaningful.
+Special thanks to the course lecturer Dr Fred Olwendo and fellow students who made this journey meaningful.
 
 ---
 
