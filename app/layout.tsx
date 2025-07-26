@@ -20,6 +20,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Don Gitonga's Ethical Journey",
+    images:["/opengraph-image.jpeg"],
     description: "A personal reflection on 12 weeks of exploring moral philosophy and ethical decision-making"
   }
 }
@@ -33,6 +34,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <meta name="apple-mobile-web-app-title" content="Don's ethical Journey" />
+        <link rel="manifest" href="/manifest.json" />
       </head>
       <body className={dmSans.className}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
