@@ -17,6 +17,11 @@ const dmSans = DM_Sans({
 export const metadata: Metadata = {
   title: "Don Gitonga's Ethical Journey",
   description: "A personal reflection on 12 weeks of exploring moral philosophy and ethical decision-making",
+  twitter: {
+    card: "summary_large_image",
+    title: "Don Gitonga's Ethical Journey",
+    description: "A personal reflection on 12 weeks of exploring moral philosophy and ethical decision-making"
+  }
 }
 
 export default function RootLayout({
