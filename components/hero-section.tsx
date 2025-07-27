@@ -32,7 +32,7 @@ export function HeroSection() {
           {/* Right Side - Content */}
           <div className="space-y-6">
             <h1 className="text-5xl lg:text-7xl font-bold text-[#4B3F72] dark:text-[#FFEF9F] leading-tight">
-              My Ethics Journey
+              Don Gitonga's Ethics Journey
             </h1>
 
             <p className="text-2xl lg:text-3xl text-[#A7C4A0] dark:text-[#58B368] font-medium">
@@ -58,7 +58,7 @@ export function HeroSection() {
           <div className="flex justify-center">
             <Avatar className="w-64 h-64 ring-6 ring-[#A7C4A0] dark:ring-[#58B368] shadow-2xl">
               <AvatarImage
-                src="/profile-image.png?height=256&width=256"
+                src="/profile-image.webp?height=256&width=256"
                 alt="Student Portrait"
                 className="object-cover"
               />
@@ -67,7 +67,7 @@ export function HeroSection() {
           </div>
 
           <h1 className="text-4xl sm:text-5xl font-bold text-[#4B3F72] dark:text-[#FFEF9F] leading-tight">
-            My Ethics Journey
+            Don Gitonga's Ethics Journey
           </h1>
 
           <p className="text-xl sm:text-2xl text-[#A7C4A0] dark:text-[#58B368] font-medium">

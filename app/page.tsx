@@ -48,7 +48,7 @@ export default function EthicsJourneyPage() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-[#A7C4A0] dark:bg-[#58B368] text-white py-8 px-4">
+      <footer className="bg-[#A7C4A0] dark:bg-[#58B368] text-white py-8 px-4 pb-20 md:pb-8">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-sm opacity-90">
             This portfolio represents my personal journey through Ethics , Culture & Development (RFC 201) at Riara University.
