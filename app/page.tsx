@@ -8,7 +8,6 @@ import { CreativeSection } from "@/components/creative-section"
 import { BottomNav } from "@/components/bottom-nav"
 import { TopNav } from "@/components/top-nav"
 import { ThemeToggle } from "@/components/theme-toggle"
-import { motion } from "framer-motion"
 
 export default function EthicsJourneyPage() {
   useEffect(() => {
@@ -40,22 +39,22 @@ export default function EthicsJourneyPage() {
 
       {/* Main Content */}
       <main className="relative">
-        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.8 }}>
+        <div>
           <HeroSection />
           <VineTimeline />
           <ReflectionSection />
           <CreativeSection />
-        </motion.div>
+        </div>
       </main>
 
       {/* Footer */}
-      <footer className="bg-[#A7C4A0] dark:bg-[#58B368] text-black dark:text-white py-8 px-4">
+      <footer className="bg-[#A7C4A0] dark:bg-[#58B368] text-white py-8 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-sm opacity-90">
-            This portfolio represents my personal journey through Ethics, Culture & Development (RFC 201) at Riara University.
+            This portfolio represents my personal journey through Ethics 101 - Fall 2024
           </p>
           <p className="text-xs mt-2 opacity-75">
-            Submitted as part of final course requirements. All reflections and real-life applications are original work.
+            Submitted as part of final course requirements. All reflections are original work.
           </p>
         </div>
       </footer>

@@ -1,9 +1,8 @@
 "use client"
 
-import { motion } from "framer-motion"
 import { Card, CardContent } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { Quote, BookOpen,Star } from "lucide-react"
+import { Quote, BookOpen, Star } from "lucide-react"
 
 const quotes = [
   {
@@ -26,79 +25,47 @@ const quotes = [
   },
 ]
 
-
 const books = [
- {
-  title: "The Power of Now",
-  author: "Eckhart Tolle",
-  description:
-    "A spiritual and philosophical guide to being present, with strong ethical undertones about consciousness and suffering.",
-  keyInsight: "Real freedom begins when you stop identifying with the voice in your head and become present in the now.",
-  personalImpact:
-    "This book shifted my understanding of suffering, responsibility, and how awareness shapes ethical living.",
-  color: "from-green-400 to-emerald-500",
-  rating: 5,
-},
-{
-  title: "Prima Facie Duties",
-  author: "1000-Word Philosophy",
-  description:
-    "An accessible overview of W.D. Ross’s pluralistic theory of moral obligations, balancing competing duties.",
-  keyInsight: "We have multiple, conditional moral duties — like fidelity, beneficence, and justice — which must be weighed in context.",
-  personalImpact:
-    "This helped me move beyond black-and-white ethics and appreciate the nuance in real-world moral dilemmas.",
-  color: "from-teal-400 to-cyan-500",
-  rating: 4,
-},
-// {
-//   title: "The Moral Landscape",
-//   author: "Sam Harris",
-//   description:
-//     "A science-based approach to ethics arguing that well-being can be objectively measured, challenging moral relativism.",
-//   keyInsight: "Moral questions are questions about the flourishing of conscious creatures — and some answers are better than others.",
-//   personalImpact:
-//     "Harris showed me that ethics can be grounded in reason and evidence, not just tradition or culture.",
-//   color: "from-sky-400 to-blue-500",
-//   rating: 4,
-// },
-// {
-//   title: "Justice: What's the Right Thing to Do?",
-//   author: "Michael Sandel",
-//   description:
-//     "A powerful introduction to political and moral philosophy through real-life cases, dilemmas, and public reasoning.",
-//   keyInsight: "Understanding justice requires not just logic, but empathy, humility, and public dialogue.",
-//   personalImpact:
-//     "Sandel’s way of engaging ethical questions reminded me that real learning happens through open, respectful dialogue.",
-//   color: "from-yellow-400 to-amber-500",
-//   rating: 5,
-// }
+  {
+    title: "The Power of Now",
+    author: "Eckhart Tolle",
+    description:
+      "A spiritual and philosophical guide to being present, with strong ethical undertones about consciousness and suffering.",
+    keyInsight:
+      "Real freedom begins when you stop identifying with the voice in your head and become present in the now.",
+    personalImpact:
+      "This book shifted my understanding of suffering, responsibility, and how awareness shapes ethical living.",
+    color: "from-green-400 to-emerald-500",
+    rating: 5,
+  },
+  {
+    title: "Prima Facie Duties",
+    author: "1000-Word Philosophy",
+    description:
+      "An accessible overview of W.D. Ross's pluralistic theory of moral obligations, balancing competing duties.",
+    keyInsight:
+      "We have multiple, conditional moral duties — like fidelity, beneficence, and justice — which must be weighed in context.",
+    personalImpact:
+      "This helped me move beyond black-and-white ethics and appreciate the nuance in real-world moral dilemmas.",
+    color: "from-teal-400 to-cyan-500",
+    rating: 4,
+  },
 ]
 
 export function CreativeSection() {
   return (
     <section id="creative" className="py-20 px-4" role="main" aria-labelledby="creative-heading">
       <div className="max-w-4xl mx-auto">
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className="text-center mb-16"
-        >
+        <div className="text-center mb-16">
           <h2 id="creative-heading" className="text-4xl md:text-5xl font-bold mb-6 text-[#4B3F72] dark:text-[#FFEF9F]">
             Creative Expressions
           </h2>
           <p className="text-xl text-[#A7C4A0] dark:text-[#58B368] max-w-2xl mx-auto">
             Quotes, books & text that capture the essence of my ethical journey
           </p>
-        </motion.div>
+        </div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          viewport={{ once: true }}
-        >
+        <div>
           <Tabs defaultValue="quotes" className="w-full">
             <TabsList className="grid w-full grid-cols-2 bg-[#A7C4A0]/20 dark:bg-[#58B368]/20" role="tablist">
               <TabsTrigger value="quotes" className="flex items-center gap-2" role="tab" aria-controls="quotes-panel">
@@ -114,13 +81,7 @@ export function CreativeSection() {
             <TabsContent value="quotes" className="mt-8" role="tabpanel" id="quotes-panel">
               <div className="grid gap-6">
                 {quotes.map((quote, index) => (
-                  <motion.div
-                    key={index}
-                    initial={{ opacity: 0, x: -30 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.6, delay: index * 0.1 }}
-                    viewport={{ once: true }}
-                  >
+                  <div key={index}>
                     <Card className="bg-gradient-to-r from-[#A7C4A0]/10 to-[#D4C2FC]/10 dark:from-[#58B368]/10 dark:to-[#FFEF9F]/10 border-none">
                       <CardContent className="p-6">
                         <blockquote className="text-xl italic text-[#4B3F72] dark:text-[#FFEF9F] mb-4">
@@ -130,7 +91,7 @@ export function CreativeSection() {
                         <p className="text-gray-700 dark:text-gray-300">{quote.reflection}</p>
                       </CardContent>
                     </Card>
-                  </motion.div>
+                  </div>
                 ))}
               </div>
             </TabsContent>
@@ -138,14 +99,8 @@ export function CreativeSection() {
             <TabsContent value="books" className="mt-8" role="tabpanel" id="books-panel">
               <div className="grid md:grid-cols-2 gap-6">
                 {books.map((book, index) => (
-                  <motion.div
-                    key={index}
-                    initial={{ opacity: 0, scale: 0.9 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 0.6, delay: index * 0.1 }}
-                    viewport={{ once: true }}
-                  >
-                    <Card className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm border-none hover:shadow-lg transition-shadow h-full">
+                  <div key={index}>
+                    <Card className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm border-none hover:shadow-lg transition-shadow duration-200 h-full">
                       <CardContent className="p-6 flex flex-col h-full">
                         {/* Book Header */}
                         <div className="mb-4">
@@ -185,12 +140,12 @@ export function CreativeSection() {
                         </div>
                       </CardContent>
                     </Card>
-                  </motion.div>
+                  </div>
                 ))}
               </div>
             </TabsContent>
           </Tabs>
-        </motion.div>
+        </div>
       </div>
     </section>
   )

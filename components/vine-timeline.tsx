@@ -1,16 +1,14 @@
 "use client"
 
-import { motion } from "framer-motion"
 import { WeekCard } from "@/components/week-card"
 
 const weekData = [
   {
     week: 1,
     title: "Introduction to Ethics",
-    topic:
-      "In this week, we explored the basics of ethics and what morality really means in our day-to-day lives.",
+    topic: "In this week, we explored the basics of ethics and what morality really means in our day-to-day lives.",
     reflection:
-      "Ethics is not just academic; it’s a lived experience rooted in every decision, action, and relationship. Understanding its foundations helps us navigate life with integrity, responsibility, and awareness of our impact on others.",
+      "Ethics is not just academic; it's a lived experience rooted in every decision, action, and relationship. Understanding its foundations helps us navigate life with integrity, responsibility, and awareness of our impact on others.",
     application:
       "I started paying more attention to how I treat people in everyday situations — like being more respectful to service workers or speaking up when something feels unfair.",
   },
@@ -27,8 +25,7 @@ const weekData = [
   {
     week: 5,
     title: "Deontological Ethics",
-    topic:
-      "We focused on Kant's ideas about duty and doing the right thing based on principles, not just outcomes.",
+    topic: "We focused on Kant's ideas about duty and doing the right thing based on principles, not just outcomes.",
     reflection:
       "Kant's idea of treating people as ends, not just as a means to an end, really stood out to me. It made me think more about how I approach my relationships and commitments.",
     application:
@@ -57,51 +54,35 @@ const weekData = [
   {
     week: 11,
     title: "Ethics in the Real World - Guest Speakers",
-    topic:
-      "We had guest speakers from different industries who shared how ethics plays out in real workplaces.",
+    topic: "We had guest speakers from different industries who shared how ethics plays out in real workplaces.",
     reflection:
-      "This was one of the most interesting sessions. We had John from Global Impact, George from Absa, and Sally from the telecommunications industry. I got to ask Sally a question about Safaricom’s market dominance in Kenya and how they handle ethical concerns around monopolization. Her response gave me a better understanding of the challenges big companies face.",
+      "This was one of the most interesting sessions. We had John from Global Impact, George from Absa, and Sally from the telecommunications industry. I got to ask Sally a question about Safaricom's market dominance in Kenya and how they handle ethical concerns around monopolization. Her response gave me a better understanding of the challenges big companies face.",
     application:
       "It made me realize the importance of asking the right questions and being aware of the ethical side of business, especially when companies have a lot of power.",
   },
 ]
 
-
-
 export function VineTimeline() {
   return (
     <section id="journey" className="py-20 px-4">
       <div className="max-w-4xl mx-auto">
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className="text-center mb-16"
-        >
+        <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-[#4B3F72] dark:text-[#FFEF9F]">The Journey</h2>
           <p className="text-xl text-[#A7C4A0] dark:text-[#58B368] max-w-2xl mx-auto">
             Six pivotal weeks that shaped my understanding of ethics and moral reasoning
           </p>
-        </motion.div>
+        </div>
 
         <div className="relative">
-          {/* Vine/Timeline Line */}
+          {/* Optimized Vine/Timeline Line */}
           <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-[#A7C4A0] via-[#D4C2FC] to-[#FFD7BA] dark:from-[#58B368] dark:via-[#FFEF9F] dark:to-[#FFD7BA] transform md:-translate-x-1/2" />
 
-          {/* Week Cards */}
+          {/* Week Cards with optimized animations */}
           <div className="space-y-12">
             {weekData.map((week, index) => (
-              <motion.div
-                key={week.week}
-                initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                className={`relative ${index % 2 === 0 ? "md:pr-1/2" : "md:pl-1/2"}`}
-              >
+              <div key={week.week} className={`relative ${index % 2 === 0 ? "md:pr-1/2" : "md:pl-1/2"}`}>
                 <WeekCard {...week} isLeft={index % 2 === 0} />
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
