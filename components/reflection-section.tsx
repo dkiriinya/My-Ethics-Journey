@@ -9,24 +9,24 @@ const reflections = [
     content:
       "Ethics isn't about having the perfect answer — it's about learning how to ask better questions. I've realized that being ethical means thinking things through, being open-minded, and staying aware of how my actions affect others. It's not a one-time thing, but something we practice in small ways every day.",
     icon: Lightbulb,
-    color: "from-yellow-200 to-amber-300 dark:from-yellow-400 dark:to-amber-500",
-    glowColor: "shadow-yellow-200/50 dark:shadow-yellow-400/30",
+    color: "from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-800", // Neutralized color
+    glowColor: "shadow-gray-200/50 dark:shadow-gray-700/30", // Neutralized glow
   },
   {
     title: "How I've Changed",
     content:
       "Before this course, I often looked for clear right-or-wrong answers. Now, I understand that ethics can be complex and context matters. I've learned to slow down, consider different viewpoints, and think more about the bigger picture. I'm also more mindful about how my choices impact others, even in small ways.",
     icon: Cloud,
-    color: "from-blue-200 to-cyan-300 dark:from-blue-400 dark:to-cyan-500",
-    glowColor: "shadow-blue-200/50 dark:shadow-blue-400/30",
+    color: "from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-800", // Neutralized color
+    glowColor: "shadow-gray-200/50 dark:shadow-gray-700/30", // Neutralized glow
   },
   {
     title: "What I'd Do Differently",
     content:
       "Looking back, I wish I had spent more time on the readings earlier on. Some ideas that felt confusing at first made a lot more sense once we discussed them in class or applied them to real-life situations. I also would've spoken up more during discussions — hearing others' experiences made a big difference. Going forward, I plan to keep reflecting on ethics even outside of class.",
     icon: Sparkles,
-    color: "from-purple-200 to-pink-300 dark:from-purple-400 dark:to-pink-500",
-    glowColor: "shadow-purple-200/50 dark:shadow-purple-400/30",
+    color: "from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-800", // Neutralized color
+    glowColor: "shadow-gray-200/50 dark:shadow-gray-700/30", // Neutralized glow
   },
 ]
 
