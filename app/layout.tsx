@@ -31,7 +31,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning className="scroll-smooth">
       <head>
         <meta name="apple-mobile-web-app-title" content="Don's ethical Journey" />
         <link rel="manifest" href="/manifest.json" />

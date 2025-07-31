@@ -1,8 +1,9 @@
 "use client"
 
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import { Avatar, AvatarFallback } from "@/components/ui/avatar"
 import { Card, CardContent } from "@/components/ui/card"
 import { motion } from "framer-motion"
+import Image from "next/image" // Import next/image
 
 export function HeroSection() {
   return (
@@ -20,10 +21,13 @@ export function HeroSection() {
           {/* Left Side - Avatar */}
           <div className="flex justify-center">
             <Avatar className="w-80 h-80 ring-6 ring-[#A7C4A0] dark:ring-[#58B368] shadow-2xl">
-              <AvatarImage
-                src="/profile-image.webp?height=320&width=320"
+              <Image
+                src="/profile-image.webp"
                 alt="Student Portrait"
-                className="object-cover"
+                width={320} // Explicit width for next/image
+                height={320} // Explicit height for next/image
+                priority // Prioritize loading for LCP
+                className="object-cover" // Apply object-cover directly
               />
               <AvatarFallback className="text-6xl bg-[#A7C4A0] dark:bg-[#58B368] text-white">Don G</AvatarFallback>
             </Avatar>
@@ -32,7 +36,7 @@ export function HeroSection() {
           {/* Right Side - Content */}
           <div className="space-y-6">
             <h1 className="text-5xl lg:text-7xl font-bold text-[#4B3F72] dark:text-[#FFEF9F] leading-tight">
-              Don Gitonga's Ethics Journey
+              My Ethics Journey
             </h1>
 
             <p className="text-2xl lg:text-3xl text-[#A7C4A0] dark:text-[#58B368] font-medium">
@@ -57,17 +61,20 @@ export function HeroSection() {
         <div className="md:hidden text-center space-y-8 w-full">
           <div className="flex justify-center">
             <Avatar className="w-64 h-64 ring-6 ring-[#A7C4A0] dark:ring-[#58B368] shadow-2xl">
-              <AvatarImage
-                src="/profile-image.webp?height=256&width=256"
+              <Image
+                src="/profile-image.webp"
                 alt="Student Portrait"
-                className="object-cover"
+                width={256} // Explicit width for next/image
+                height={256} // Explicit height for next/image
+                priority // Prioritize loading for LCP
+                className="object-cover" // Apply object-cover directly
               />
               <AvatarFallback className="text-4xl bg-[#A7C4A0] dark:bg-[#58B368] text-white">Don G</AvatarFallback>
             </Avatar>
           </div>
 
           <h1 className="text-4xl sm:text-5xl font-bold text-[#4B3F72] dark:text-[#FFEF9F] leading-tight">
-            Don Gitonga's Ethics Journey
+            My Ethics Journey
           </h1>
 
           <p className="text-xl sm:text-2xl text-[#A7C4A0] dark:text-[#58B368] font-medium">
