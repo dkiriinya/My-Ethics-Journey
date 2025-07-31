@@ -1,8 +1,8 @@
-# 🌿 Ethics Journey — Reflective Portfolio Website
+#  Ethics Journey — Reflective Portfolio Website
 
 This is a **one-page, mobile-first portfolio website** created to document my personal journey through a 12-week university Ethics class. It highlights insights, reflections, and creative expressions from selected weeks of the course.
 
-## 📘 Purpose
+##  Purpose
 
 The goal of this project is to demonstrate:
 
@@ -15,7 +15,7 @@ The goal of this project is to demonstrate:
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Tech | Description |
 |------|-------------|
@@ -28,7 +28,7 @@ The goal of this project is to demonstrate:
 
 ---
 
-## 📐 Site Structure
+##  Site Structure
 
 This is a **single scrollable page** with the following sections:
 
@@ -42,7 +42,7 @@ Includes **bottom navigation on mobile** for easy section jumping and a **dark/l
 
 ---
 
-## 🌈 Color Palette
+##  Color Palette
 
 | Role | Light Mode | Dark Mode |
 |------|------------|-----------|
@@ -53,7 +53,7 @@ Includes **bottom navigation on mobile** for easy section jumping and a **dark/l
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 1. **Clone the repo**
    ```bash
@@ -77,13 +77,13 @@ Includes **bottom navigation on mobile** for easy section jumping and a **dark/l
 
 ---
 
-## 🔐 Academic Disclaimer
+##  Academic Disclaimer
 
 This portfolio is part of an academic assignment. **Any form of plagiarism, sharing, or unauthorized distribution of this content is prohibited**. The content is original and personal to my learning experience.
 
 ---
 
-## 📅 Submission Info
+##  Submission Info
 
 - **Due Date**: August 1st, 2025  
 - **University**: Riara Unversity
@@ -91,7 +91,7 @@ This portfolio is part of an academic assignment. **Any form of plagiarism, shar
 
 ---
 
-## 🙏 Credits
+##  Credits
 
 Special thanks to the course lecturer Dr Fred Olwendo and fellow students who made this journey meaningful.
 
