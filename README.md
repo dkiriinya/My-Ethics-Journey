@@ -19,8 +19,8 @@ The goal of this project is to demonstrate:
 
 | Tech | Description |
 |------|-------------|
-| [Next.js v15](https://nextjs.org/) | React framework with App Router |
-| [Tailwind CSS v4](https://tailwindcss.com/) | Utility-first CSS for styling |
+| [Next.js v14](https://nextjs.org/) | React framework with App Router |
+| [Tailwind CSS v3](https://tailwindcss.com/) | Utility-first CSS for styling |
 | [ShadCN UI](https://ui.shadcn.dev/) | Prebuilt accessible UI components |
 | [Framer Motion](https://www.framer.com/motion/) | Smooth scroll-triggered animations |
 | [React Scroll](https://www.npmjs.com/package/react-scroll) | For in-page navigation anchors |
